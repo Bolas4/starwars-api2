@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import SocialLink from './SocialLink';
+import styled from "styled-components";
+import SocialLink from "./SocialLink";
 
 function SocialLinks() {
   return (
@@ -15,7 +15,7 @@ function SocialLinks() {
         </a>
       </KidsContainer>
     </LinksContainer>
-  )
+  );
 }
 
 export default SocialLinks;
@@ -29,6 +29,7 @@ const LinksContainer = styled.div`
 const KidsContainer = styled.div`
   position: relative;
   margin-left: 10px;
+
   ::before {
     content: "";
     position: absolute;
@@ -39,6 +40,7 @@ const KidsContainer = styled.div`
     background: #343434;
     right: 55px;
   }
+
   > a {
     width: 43px;
     height: 15px;
@@ -49,12 +51,14 @@ const KidsContainer = styled.div`
     border-radius: 16px;
     transition: background-color 350ms;
   }
+
   > a > span {
     width: 31px;
     height: 9px;
     background-repeat: no-repeat;
     background-image: url(https://static-mh.content.disney.io/starwars/assets/shared/icon_kids-dc39fc54f6c2.svg);
   }
+
   :hover > a {
     background-color: #ccc;
   }
