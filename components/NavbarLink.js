@@ -1,13 +1,11 @@
-
 import styled from "styled-components";
 
 function NavbarLink({ title }) {
   return (
     <NavLink>
       <h4>{title}</h4>
-      
     </NavLink>
-  )
+  );
 }
 
 export default NavbarLink;
@@ -20,7 +18,7 @@ const NavLink = styled.a`
   height: 100%;
   text-decoration: none;
   padding: 0 25px;
-  transition: color 200ms;
+  transition: color 100ms;
   color: #999;
   cursor: pointer;
 
