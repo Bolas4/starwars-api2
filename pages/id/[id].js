@@ -1,18 +1,17 @@
-import CharacterCard from "../../components/CharacterCard"
 import styled from "styled-components";
+import CharacterCard from "../../components/CharacterCard";
 
 function Character({ character }) {
   return (
     <CharacterContainer>
       <StarfieldLeft />
-      <CharacterCard character={character}/>
+      <CharacterCard character={character} />
       <StarfieldRight />
     </CharacterContainer>
-  )
+  );
 }
 
-
-//EXECUTED ON SERVER
+// EXECUTED ON SERVER
 export async function getStaticProps(context) {
   const character = await fetch(
     `https://akabab.github.io/starwars-api/api/id/${context.params.id}`
@@ -50,6 +49,7 @@ const StarfieldLeft = styled.div`
   width: 100px;
   top: 0;
   background-repeat: repeat-y;
+
   left: 0;
   height: 1700px;
   background-position: left center;
@@ -62,6 +62,7 @@ const StarfieldRight = styled.div`
   width: 100px;
   top: 0;
   background-repeat: repeat-y;
+
   right: 0;
   height: 1700px;
   background-position: right center;
