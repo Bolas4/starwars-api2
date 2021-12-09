@@ -1,5 +1,6 @@
-import Link from "next/link";
 import styled from "styled-components";
+import Link from "next/link";
+import Image from "next/image";
 
 function Character({ character }) {
   return (
@@ -9,7 +10,6 @@ function Character({ character }) {
           <img src={character.image} alt={character.name} />
         </a>
       </Link>
-
       <Link href={`/id/${character.id}.json`}>
         <a>
           <h1>{character.name}</h1>
@@ -30,9 +30,11 @@ const CharacterContainer = styled.div`
   transition: all 0.25s ease;
   overflow: hidden;
   z-index: 1;
+
   :hover {
     transform: scale(1.05);
   }
+
   > a > img {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -40,6 +42,7 @@ const CharacterContainer = styled.div`
     height: 300px;
     border-bottom: 2px solid #9e4f60;
   }
+
   > a > h1 {
     background-image: url("https://static-mh.content.disney.io/starwars/assets/shared/bg_hash_top@2x-1d6544f5cc3a.png");
     padding: 8px;
@@ -50,6 +53,7 @@ const CharacterContainer = styled.div`
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     transition: color 125ms;
+
     :hover {
       color: #9e4f60;
     }
@@ -68,4 +72,3 @@ const Decal = styled.div`
   transform: scaleY(-1);
   background-position: -100% 0;
 `;
-
