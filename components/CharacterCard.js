@@ -59,6 +59,7 @@ const CardContainer = styled.div`
   display: flex;
   justify-content: center;
   border-radius: 6px;
+
   > img {
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -79,6 +80,7 @@ const CharacterInfo = styled.div`
   background-repeat: repeat-x;
   background-position: top left;
   background-color: #282727;
+
   > h1 {
     width: 100%;
     margin: 0 auto;
@@ -88,23 +90,27 @@ const CharacterInfo = styled.div`
     text-transform: uppercase;
     margin-bottom: 20px;
   }
+
   > h4 {
     color: #ddd;
     font-weight: 500;
     margin-bottom: 10px;
     margin-top: 20px;
   }
+
   > p,
   a {
     color: #9e4f60;
     transition: color 125ms;
     text-transform: capitalize;
     text-decoration: none;
+
     :hover {
       color: rgb(183, 104, 121);
       cursor: pointer;
     }
   }
+
   > span {
     color: #aaa;
     text-transform: capitalize;
