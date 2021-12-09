@@ -2,19 +2,21 @@ import styled from "styled-components";
 
 function SocialLink({ link, image }) {
   return (
-    <Link href="/" image={image}>
+    <Link href="https://www.facebook.com" image={image}>
       <span />
     </Link>
-  )
+  );
 }
 
-export default SocialLink
+export default SocialLink;
 
 const Link = styled.a`
   transition: background-color 350ms;
+
   :hover > span {
     background-color: #ccc;
   }
+
   > span {
     display: block;
     background-color: #999;
@@ -22,6 +24,6 @@ const Link = styled.a`
     width: 21px;
     mask: ${(props) =>
       props.image && "url(" + props.image + ") no-repeat 50% 50%"};
-    transition: background-color 350ms; /*Without it u cant see social links images */
+    transition: background-color 350ms;
   }
 `;
