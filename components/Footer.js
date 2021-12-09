@@ -43,7 +43,7 @@ function Footer() {
 export default Footer;
 
 const FooterContainer = styled.div`
-  width: 98%;
+  width: 97.6%;
   height: 270px;
   margin-top: 70px;
   display: grid;
