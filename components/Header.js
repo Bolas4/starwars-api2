@@ -1,32 +1,37 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import SocialLinks from "./SocialLinks";
 import Link from "next/link";
-import SocialLinks from './SocialLinks';
 
 function Header() {
   return (
     <HeaderContainer>
       <HeaderLeft>
-        <SocialLinks/>
+        <SocialLinks />
       </HeaderLeft>
-      <Link href="/"> 
+      <Link href="/">
         <a>
-          <img src="https://download.logo.wine/logo/Star_Wars/Star_Wars-Logo.wine.png" aLt=""/>
+          <img
+            src="https://download.logo.wine/logo/Star_Wars/Star_Wars-Logo.wine.png"
+            alt=""
+          />
         </a>
       </Link>
       <HeaderRight>
         <HeaderSearch>
-          <input placeholder="Search Star Wars"/>
-          <img src="https://static-mh.content.disney.io/starwars/assets/navigation/icon_search-957a123fdb62.svg" alt="" />
+          <input placeholder="Search Star Wars" />
+          <img
+            src="https://static-mh.content.disney.io/starwars/assets/navigation/icon_search-957a123fdb62.svg"
+            alt=""
+          />
         </HeaderSearch>
         <HeaderActions>
           <button>LOG IN</button>
           <span>//</span>
-          <button>SIGN IN</button>
+          <button>SIGN UP</button>
         </HeaderActions>
       </HeaderRight>
-      
     </HeaderContainer>
-  )
+  );
 }
 
 export default Header;
@@ -44,12 +49,12 @@ const HeaderContainer = styled.div`
   left: 0;
   z-index: 999;
 
-  > a> img {
+  > a > img {
     object-fit: contain;
     margin-top: -40px;
     margin-bottom: -20px;
     height: 180px;
-    filter: brightness(0) invert(1); /* Changes background image to white from black */
+    filter: brightness(0) invert(1);
   }
 `;
 
@@ -73,10 +78,12 @@ const HeaderSearch = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
+  opacity: 0.7;
 
   :focus-within {
     opacity: 1;
   }
+
   > input {
     background: transparent;
     outline: none;
@@ -86,10 +93,12 @@ const HeaderSearch = styled.div`
     font-size: 15px;
     color: white;
   }
+
   > input::placeholder {
     opacity: 1;
     color: gray;
   }
+
   > img {
     object-fit: contain;
     height: 20px;
