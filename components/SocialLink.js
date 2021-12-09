@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 function SocialLink({ link, image }) {
   return (
-    <Link href="https://www.facebook.com" image={image}>
+    <Link href="/" image={image}>
       <span />
     </Link>
   );
