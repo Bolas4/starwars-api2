@@ -13,16 +13,14 @@ function Navbar() {
         <NavbarLink title="COMMUNITY" />
         <NavbarLink title="DATABANK" />
       </NavbarLinks>
-      
     </NavbarContainer>
-  )
+  );
 }
 
 export default Navbar;
 
 const NavbarContainer = styled.div`
   border-top: 1px solid #343434;
-  border-bottom: 1px solid #343434;
   background-color: black;
   width: 100%;
   box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
